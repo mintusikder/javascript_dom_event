@@ -94,3 +94,16 @@ document.getElementById('att-container').setAttribute('value', 'myValue')
 //getAttribute-------------
 const myGetAttribute = document.getElementById('att-container').getAttribute('class')
 console.log(myGetAttribute)
+
+
+//InnerHTML Vs InnerText--------------------------------------------------
+const innerTextHtml = document.getElementById('html-container')
+console.log(innerTextHtml.innerHTML)
+
+const innerTextHtml1 = document.getElementById('html-container')
+console.log(innerTextHtml1.innerText)
+
+const innerTextHtml2 = document.getElementById('html-container')
+console.log(innerTextHtml2.textContent)
+
+
