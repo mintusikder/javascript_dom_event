@@ -62,24 +62,35 @@
 
 //create element------------------------------------------------
 //call parent container-------------
-const parentContainer = document.getElementById('container-details')
-//create li tag------------------
-const myLi= document.createElement('li')
-myLi.innerText ='Four'
-// console.log(myLi.innerText)
-parentContainer.appendChild(myLi)
+// const parentContainer = document.getElementById('container-details')
+// //create li tag------------------
+// const myLi= document.createElement('li')
+// myLi.innerText ='Four'
+// // console.log(myLi.innerText)
+// parentContainer.appendChild(myLi)
 
 
-//call parent container----------
-const sectionContainer = document.getElementById('section-container')
-//create div tag----------------
-const myDiv = document.createElement('div')
-// console.log(myDiv)
-//create h1 tag
-const h1 = document.createElement('h1')
-h1.innerText='Exploring dynamic ja'
-// console.log(h1)
-//put h1 inside div-------------
-myDiv.appendChild(h1)
-// console.log(myDiv)
-sectionContainer.appendChild(myDiv)
+// //call parent container----------
+// const sectionContainer = document.getElementById('section-container')
+// //create div tag----------------
+// const myDiv = document.createElement('div')
+// // console.log(myDiv)
+// //create h1 tag
+// const h1 = document.createElement('h1')
+// h1.innerText='Exploring dynamic ja'
+// // console.log(h1)
+// //put h1 inside div-------------
+// myDiv.appendChild(h1)
+// // console.log(myDiv)
+// sectionContainer.appendChild(myDiv)
+
+
+//getAttribute & setAttribute---------------------------------------------
+//setAttribute--------------
+document.getElementById('att-container').setAttribute('class', 'myClass')
+document.getElementById('att-container').setAttribute('value', 'myValue')
+
+
+//getAttribute-------------
+const myGetAttribute = document.getElementById('att-container').getAttribute('class')
+console.log(myGetAttribute)
