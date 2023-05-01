@@ -10,8 +10,8 @@
 //     console.log(tagList[i].innerText)
 // }
 
-//className--------------------------
 
+//className--------------------------
 // const classList = document.getElementsByClassName('text')
 // // console.log(classList)
 // for(const value of classList){
@@ -19,25 +19,24 @@
 //     value.style.color = 'blue'
 // }
 
-//tagName-------------------------------------
 
+//tagName-------------------------------------
 // const myHeading = document.getElementById('heading')
 // myHeading.style.textAlign ='center'
 // myHeading.style.color='red'
 // console.log(myHeading.innerText)
 
-//tagNameShort varsion--------------------------------
 
+//tagNameShort varsion--------------------------------
 // document.getElementById('heading').style.color='green'
 
 
 //quertSelector--------------------------------
-
 // const myElemenet = document.querySelector('.text')
 // console.log(myElemenet)
 
-//quertSelectorAll--------------------------------
 
+//quertSelectorAll--------------------------------
 // const myElemenet = document.querySelectorAll('.text')
 // // console.log(myElemenet)
 
@@ -50,12 +49,37 @@
 // const lastChild =document.querySelectorAll('.li-container:nth-child(3)')
 // console.log(lastChild)
 
-//class add or remove--------------------------------------------
 
-const myElemenet =document.getElementById('first-heading')
-//first way-------------
-myElemenet.className ='myClass'
-//second way-----------
-myElemenet.classList.add('hello')
-//remove---------------
-myElemenet.classList.remove('myClass')
+//class add or remove--------------------------------------------
+// const myElemenet =document.getElementById('first-heading')
+// //first way-------------
+// myElemenet.className ='myClass'
+// //second way-----------
+// myElemenet.classList.add('hello')
+// //remove---------------
+// myElemenet.classList.remove('myClass')
+
+
+//create element------------------------------------------------
+//call parent container-------------
+const parentContainer = document.getElementById('container-details')
+//create li tag------------------
+const myLi= document.createElement('li')
+myLi.innerText ='Four'
+// console.log(myLi.innerText)
+parentContainer.appendChild(myLi)
+
+
+//call parent container----------
+const sectionContainer = document.getElementById('section-container')
+//create div tag----------------
+const myDiv = document.createElement('div')
+// console.log(myDiv)
+//create h1 tag
+const h1 = document.createElement('h1')
+h1.innerText='Exploring dynamic ja'
+// console.log(h1)
+//put h1 inside div-------------
+myDiv.appendChild(h1)
+// console.log(myDiv)
+sectionContainer.appendChild(myDiv)
